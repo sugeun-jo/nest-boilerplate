@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  assignment_server:
+    image: assignment-server:latest
+    restart: always
+    ports:
+      - 4000:4000
+    networks:
+      - assignment_assignment_network
+networks:
+  assignment_assignment_network:
+    external: true

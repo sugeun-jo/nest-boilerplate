@@ -15,5 +15,9 @@ services:
       - 13306:3306
     volumes:
       - local_db_data:/var/lib/mysql
+    networks:
+      - assignment_network
 volumes:
   local_db_data:
+networks:
+  assignment_network:
